@@ -12,7 +12,6 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter basename='/pethroom'>
         <ScrollToTop />
@@ -20,7 +19,6 @@ root.render(
         <Styles />
       </BrowserRouter>
       </Provider>
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
