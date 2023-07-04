@@ -59,15 +59,15 @@ export default function Cart() {
                   <button
                     className="count_btn"
                     style={{marginRight:10}}
-                    onClick={() => dispatch(addCount(state.cart[i].id))}
-                  >
-                    +
-                  </button>
-                  <button
-                    className="count_btn"
                     onClick={() => dispatch(subCount(state.cart[i].id))}
                   >
                     -
+                  </button>
+                  <button
+                    className="count_btn"
+                    onClick={() => dispatch(addCount(state.cart[i].id))}
+                  >
+                    +
                   </button>
                 </td>
                 <td className="price" >
