@@ -21,7 +21,7 @@ export default function Detail(props) {
         <button 
         className="cart_btn"
         onClick={() => {
-          dispatch(addItem({id: products[id].id, title:products[id].title, count:1, price:products[id].price}))
+          dispatch(addItem({id: products[id].id, title:products[id].title, count:1, price:products[id].price, image:products[id].image}))
         }}
         >ADD TO CART</button>
     </div>
