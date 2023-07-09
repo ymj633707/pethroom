@@ -4,11 +4,17 @@ import { useSelector, useDispatch } from 'react-redux';
 import { deleteItem, addCount, subCount, addItem } from './store';
 import '../styles/cart.css';
 
-export default function Cart() {
+
+export default function Cart({setCartPopup }) {
   const [totalPrice, setTotalPrice] = useState(0);
   const [deliveryCost, setDeliveryCost] = useState(0);
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    setCartPopup(false); // App 컴포넌트의 setCartPopup을 호출하여 cartPopup 상태 값을 업데이트
+  }, [setCartPopup]);
 
   useEffect(() => {
     let calculatedTotalPrice = 0;

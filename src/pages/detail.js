@@ -3,6 +3,7 @@ import {useParams} from 'react-router-dom'
 import {addItem} from '../pages/store'
 import { useDispatch } from 'react-redux'
 
+
 export default function Detail(props) {
 
     const {products} = props

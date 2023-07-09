@@ -1,0 +1,39 @@
+.about_area {
+    background-color:#1c3761;
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    background-image: url(/public/images/about/inside-bg-1.png);
+}
+
+.about_img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.about_box {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Pretendard Variable'
+}
+
+.about_box h4 {
+    font-weight: bold;
+    width: 260px;
+    font-size: 24px;
+}
+
+.about_box p {
+    width: 1000px;
+}
+
+
+.about {
+    display: flex;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}

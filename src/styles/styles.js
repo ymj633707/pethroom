@@ -27,9 +27,18 @@ li {
 .main_img {
     display: block;
     width: 100%;
-    height: 700px;
+    height: 880px;
     object-fit: cover;
 }
+
+::-moz-selection {
+    background: #1c3761;
+    color: #ffc303;
+ }
+ ::selection {
+    background: #1c3761;
+    color: #ffc303;
+ }
 
 header {
     background-color: #1c3761;
@@ -72,13 +81,14 @@ header {
     justify-content: space-between;
 }
 
-section h2 {
+.title {
     font-family: 'Oswald';
     font-weight: 500;
     font-size: 40px;
     margin: 40px 0px;
     text-align: center;
     letter-spacing:3px;
+    position: relative;
 }
 
 .product_box {
@@ -102,11 +112,12 @@ section h2 {
 .product_box button {
     border: none;
     width: 140px;
-    font-family: 'Oswald';
+    font-family: 'Pretendard Variable';
     font-size: 20px;
     background-color: #fff;
     height: 40px;
     line-height: 40px;
+    color: #636363;
 }
 
 .product_box .cart_icon {
@@ -114,6 +125,18 @@ section h2 {
     margin-right: 5px;
     padding-bottom: 5px;
     box-sizing: border-box;
+}
+
+.main_banner {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.main_banner img {
+    width: 100%;
 }
 
 .sub_list {
@@ -124,12 +147,13 @@ section h2 {
 .sub_list ul {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 60px;
     position: absolute;
     z-index: 9999;
     top: -60px; left:50%;
     transform: translateX(-50%);
-    width: 1000px;
+    width: 600px;
     background-color: #fff;
     border-radius: 15px 15px 0 0px;
 }
@@ -246,5 +270,45 @@ footer .footer_area {
     font-size: 14px;
 }
 
+.popup {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pretendard Variable';
+
+}
+
+.popup p{
+    width: 100%;
+    height:150px;
+    margin:0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.btn_box {
+    display: flex;
+    border-top:1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn_box .popup_btn {
+    height:50px;
+    line-height: 50px;
+    width: calc(300px / 2);
+    cursor: pointer;
+
+    &:hover{
+        background-color: #1c3761;
+        color: #fff
+    }
+}
 
 `
