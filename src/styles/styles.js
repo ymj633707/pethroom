@@ -333,6 +333,7 @@ footer .footer_area {
     width: calc(300px / 2);
     cursor: pointer;
     transition: all 0.3s;
+    text-align: center;
 
     &:hover{
         background-color: #1c3761;
