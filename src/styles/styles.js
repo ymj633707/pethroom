@@ -173,7 +173,9 @@ header {
     box-sizing: border-box;
 }
 
-.datail_area {
+/*--------------------detail--------------------*/
+
+.detail_area {
     font-family: Pretendard Variable;
     width: 1200px;
     margin: 0 auto;
@@ -183,12 +185,12 @@ header {
     position: relative;
 }
 
-.datail_area .txt {
+.detail_area .txt {
     padding: 30px 50px;
     box-sizing: border-box;
 }
 
-.datail_area .txt .item {
+.detail_area .txt .item {
     font-weight: 500;
     font-family: 'Oswald';
     letter-spacing: 1px;
@@ -196,13 +198,13 @@ header {
     margin-bottom: 7px;
 }
 
-.datail_area .txt h2 {
+.detail_area .txt h2 {
     margin-bottom: 30px;
 }
 
-.datail_area .cart_btn {
+.detail_area .cart_btn {
     position: absolute;
-    bottom: 230px; right: 250px;
+    bottom: 230px; right: 215px;
     font-family: 'Oswald';
     background-color: #fff;
     padding: 10px 30px;
@@ -214,6 +216,32 @@ header {
         background-color: #1c3761;
         color: #fff;
     }
+}
+
+.notice_area {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.notice_area h4 {
+    font-family: 'Oswald';
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+.notice_area p {
+    margin: 0;
+    font-family: 'Pretendard Variable'
+}
+
+.notice_area .box {
+    width: 1200px;
+    height: auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 
@@ -304,6 +332,7 @@ footer .footer_area {
     line-height: 50px;
     width: calc(300px / 2);
     cursor: pointer;
+    transition: all 0.3s;
 
     &:hover{
         background-color: #1c3761;
