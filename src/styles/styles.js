@@ -150,7 +150,7 @@ header {
     justify-content: space-around;
     height: 60px;
     position: absolute;
-    z-index: 9999;
+    z-index: 100;
     top: -60px; left:50%;
     transform: translateX(-50%);
     width: 600px;
