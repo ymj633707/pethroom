@@ -42,24 +42,24 @@ const Hygiene = () => {
   }
 
     return (
-        <Routes>
-        <Route path='/' element={
-          <>
-          <section>
-            <h2 className='title'>HYGIENE</h2>
+     <>
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <section>
+            <h2 className='title'>FOOD</h2>
             <div className='product_area'>
-            {
-                products.map((product, index) => {
-                  return (
-                    <div className='product_box' key={index}>
-                      <Link to={`/detail/${index}`}>
-                        <img className="product_img" src={product.image} alt='best_img'/>
-                        <h4>{product.title}</h4>
+              {products.map((product, i) => {
+                return (
+                  <div className='product_box' key={i}>
+                  <Link to={`detail/${i}`}>
+                  <img className="product_img" src={product.image} alt='best_img'/>
+                  <h4>{product.title}</h4>
                         <p>{product.desc}</p>
                         <p className='price_txt'>{product.price}원</p>
-                      </Link>
-
-                      <button onClick={()=>{
+                  </Link>
+                  <button onClick={()=>{
                         setCartPopup(true);
                         dispatch(
                           addItem({
@@ -74,21 +74,20 @@ const Hygiene = () => {
                         </button>
 
                         {cartPopup ? <CartPopup setCartPopup={setCartPopup} /> : null}
+                  </div>
 
-                    </div>
-                  )
-                })
-              }
+                );
+              })}
             </div>
-          </section>
-          
-          </>
-          
-        } />
-
-        <Route path='detail/:id' element={<Detail  products={products}/>}  />
-
+            </section>
+          }
+        />
+        <Route path='detail/:id' element={<Detail products={products} />} />
       </Routes>
+    </>
+           
+
+      
     );
 };
 
