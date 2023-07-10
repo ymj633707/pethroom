@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/pethroom/static/css/main.f21de931.css",
-    "main.js": "/pethroom/static/js/main.3268d139.js",
+    "main.js": "/pethroom/static/js/main.55323f31.js",
     "static/js/787.ec704a7a.chunk.js": "/pethroom/static/js/787.ec704a7a.chunk.js",
     "static/media/inside-bg-1.png": "/pethroom/static/media/inside-bg-1.9f1f182347cc2ca9fff4.png",
     "index.html": "/pethroom/index.html",
     "main.f21de931.css.map": "/pethroom/static/css/main.f21de931.css.map",
-    "main.3268d139.js.map": "/pethroom/static/js/main.3268d139.js.map",
+    "main.55323f31.js.map": "/pethroom/static/js/main.55323f31.js.map",
     "787.ec704a7a.chunk.js.map": "/pethroom/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f21de931.css",
-    "static/js/main.3268d139.js"
+    "static/js/main.55323f31.js"
   ]
 }
